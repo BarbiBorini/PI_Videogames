@@ -1,4 +1,4 @@
-.gen {
+/* .gen {
     position: relative;
     right: 259px;
 }
@@ -38,4 +38,26 @@
  }
  .btn:active {
     transform: scale(0.9);
-} 
+}  */
+
+
+.searchb {
+    color: #FE7CB3;
+    border: solid 2px #FE7CB3;
+    background-color: #FFE9EC;
+    font-family: 'Consolas';
+    height: 2.5rem;
+    width: 250px;
+    font-size: 15px;
+    padding-left: 1em;
+  }
+
+  .btn {
+    color: #FE7CB3;
+    border: solid 2px #FE7CB3;
+    background-color: #FFE9EC;
+    font-family: 'Consolas';
+    height: 3rem;
+    font-size: 15px;
+    padding-left: 1em; 
+  }

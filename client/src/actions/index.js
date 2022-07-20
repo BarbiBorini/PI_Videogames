@@ -2,8 +2,14 @@ import axios from "axios";
 
 
 
-export function getVideoGames() {
+export function getVideoGames(name) {
   return function (dispatch) {
+    if(name){ 
+      axios.get(`http://localhost:3001/videogames?name=${name}`)
+      .then((response) => {
+        dispatch({ type: "GET_VIDEO_GAMES", payload: response.data });
+      })
+    }else{
     axios
       .get("http://localhost:3001/videogames")
       .then((response) => {
@@ -12,6 +18,7 @@ export function getVideoGames() {
       .catch(() => {
         alert("Error");
       });
+    } 
   };
 }
 
@@ -53,11 +60,13 @@ export const orderByRating = (payload) => {
 //   };
 // }
 
+
+
 export function getNameVideoGames(name){
   return async function(dispatch){
     try {
-      var json = await   axios
-      .get(`http://localhost:3001/videogames?name=${name}`)
+      var json = await   axios.get(`http://localhost:3001/videogames?name=${name}`)
+      
       return dispatch({
         type: "GET_VIDOEGAMES_QUERY",
         payload: json.data

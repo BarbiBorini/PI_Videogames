@@ -7,13 +7,13 @@ export default function Card({ image, name, rating, genre, id }) {
   return (
     <div>
       <div className="cards2">
-        <div className="card">
+        <div >
           <NavLink className={"NavLink"} to={"/videogames/" + id}>
-            <div>
+            <div className="card">
               <img
                 className="image2"
                 src={image}
-                alt="no se encontro"
+                alt="Not found"
                 width="330px"
                 height="250px"
               />

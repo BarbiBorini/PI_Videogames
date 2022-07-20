@@ -1,0 +1,113 @@
+.firstContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: baseline;
+  height: 4em;
+  padding: 1em;
+  background: #FFE9EC;
+  margin-bottom: 1em;
+}
+
+.secondContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.thirdContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-decoration: none;
+  align-items: center;
+}
+
+.optionsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  height: 4em;
+  padding: 1em;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+  height: 15em;
+  margin: 10;
+  padding: 10;
+  
+}
+
+.optionIcon {
+  width: 2.3em;
+  height: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+.computer {
+  width: 17em;
+  height: 17em;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+/* button {
+  margin: 0;
+  padding: 0;
+  background-color: #FEC3E3;
+} */
+
+.optionsDes {
+  background: none;
+  border: none;
+  color: #FE7CB3;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+}
+
+.optionsDes:hover {
+  color: #DFC2FF;
+}
+
+#middle {
+  margin: 0 auto;
+  width: 1050px;
+  height: 175px;
+  margin-top: 89px;
+}
+
+.icon_middle {
+  width:50px;
+  float: right;
+  width: 100px;
+  height: 85px;
+}
+
+.icon_middle span {
+  display:block;
+}
+
+.main{
+  background: url(../images/background.jpg);
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+.selectBar {
+  color: #FE7CB3;
+  border: solid 2px #FE7CB3;
+  background-color: #FFE9EC;
+  font-family: 'Consolas';
+  height: 3rem;
+  width: 250px;
+  font-size: 15px;
+  padding-left: 1em;
+}

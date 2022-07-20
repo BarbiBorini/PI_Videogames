@@ -36,11 +36,11 @@ export default function Form() {
     const errors = {};
 
     if (!newGame.name) {
-      errors.name = "Missing add the name";
+      errors.name = "Pleas add a name";
     }
 
     if (!newGame.release_date) {
-      errors.release_date = "Missing add game release date";
+      errors.release_date = "Please add the release date";
     } else if (
       !/^\d{4}([-/.])(0?[1-9]|1[1-2])\1(3[01]|[12][0-9]|0?[1-9])$/.test(
         newGame.release_date
@@ -50,27 +50,27 @@ export default function Form() {
     }
 
     if (!newGame.rating) {
-      errors.rating = " Enter the rating of the game ";
+      errors.rating = "Please indicate a rating";
     } else if (!/^[0-5]([.][0-9]{1,2})?/.test(Number(newGame.rating))) {
       errors.rating = "The rating must be between 1 and 5";
     }
 
     if (!newGame.description) {
-      errors.description = "Missing add description";
+      errors.description = "Pleas add a description";
     }
 
     if (!newGame.image) {
-      errors.image = "Missing add the URL of the image";
+      errors.image = "Please add the image URL";
     } else if (!/^https?:\/\/[\w-]+(\.[\w-]+)+[/#?]?.*$/.test(newGame.image)) {
       errors.image = " You must enter a valid url";
     }
 
     if (!newGame.genre || newGame.genre.length === 0) {
-      errors.genre = "Need to add genres";
+      errors.genre = "Please add at least one gender";
     }
 
     if(newGame.plataform==""){
-      errors.plataform = "Need to add platforms"
+      errors.plataform = "Please add at least one platform"
     }
 
     return errors;
@@ -110,9 +110,9 @@ export default function Form() {
       <form onSubmit={(e) => handleSubmit(e)}>
         <div className="main-content">
           <Link to="/home">
-            <button className="selectfont3">GO HOME</button>
+            <button className="selectfont3">HOME</button>
           </Link>
-          <h3 className="name2">CREATE NEW VIDEOGAME</h3>
+          <h3 className="name2">ADD NEW VIDEOGAME</h3>
           <br></br>
 
           <div>
@@ -156,7 +156,7 @@ export default function Form() {
           </div>
 
           <div>
-            <label>Image url </label>
+            <label>Image url</label>
             <br></br>
             <input
               className="name"
@@ -191,7 +191,7 @@ export default function Form() {
           </div>
 
           <div>
-            <label className="name2">PLATFORMS </label>
+            <label className="name2">PLATFORMS</label>
 
             {finalPlataforms.map((p) => {
               return (
@@ -221,7 +221,7 @@ export default function Form() {
                 className="comment"
                 type="text"
                 name="description"
-                placeholder="Type a description of your game"
+                placeholder="Add a description for your game"
                 cols="40"
                 rows="6"
                 onChange={(e) => captureValue(e)}
@@ -245,7 +245,7 @@ export default function Form() {
           ) : (
             <p className="alert">
               {" "}
-              Check the errors <br /> Before create VideoGame
+              Please complete the information before submiting.
             </p>
           )}
         </div>

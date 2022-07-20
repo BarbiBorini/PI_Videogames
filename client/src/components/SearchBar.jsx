@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { getNameVideoGames } from "../actions";
+import { getVideoGames } from "../actions";
 import "../styles/SearchBarStyle.css";
 
 export default function SearchBar() {
@@ -15,7 +15,8 @@ export default function SearchBar() {
   }
   function handleSubmit(p) {
     p.preventDefault();
-    dispatch(getNameVideoGames(name));
+    dispatch(getVideoGames(name));
+    setName("")
   }
 
   return (
@@ -25,6 +26,7 @@ export default function SearchBar() {
           className="searchb"
           type="text"
           placeholder="Search game by name..."
+          value={name}
           onChange={(p) => handInputChange(p)}
         />
 

@@ -1,13 +1,10 @@
 
 .cards2{
-    
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     overflow: hidden;
     justify-content: center;
-    color: green;
-    width: 380px;
-   
-    
+    text-align: center;
+    margin-top: 1em;
+    cursor: pointer;
 }
 
 
@@ -21,7 +18,7 @@
     height:35px;
     padding-left:10px;
     padding-right:10px;
-    color:white;
+    color:#FE7CB3;
 }
 
 .image2 {
@@ -30,33 +27,27 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: solid 2px goldenrod;
+    /* border: solid 2px goldenrod; */
     border-radius:20px;
     margin-top: 10px;
 }
 
 .genres2{
     margin: 0em 0.4em;
-    color: white;
+    color: #FE7CB3;
     
 }
 
 .rat{
-    color: white;
-    
+    color: #FE7CB3;
+    margin: 0em 0.4em;
 }
 
 .card{
-    
-   
+    background-image: linear-gradient(to top, #FFE0F0  0%, #FFE0F0   100%);
     justify-content: center;
-   
-    background-color: #6659df13;
     text-decoration: none;
     border-radius: 10px;
-    /* color: #7265e7; */
-    color:gold;
-    box-shadow: 0px 5px goldenrod;
     transition: 500ms;
     margin-left: 3em;
     margin-right: 0.5em;
@@ -66,16 +57,14 @@
     width: 250px;
     overflow: hidden;
     box-sizing: border-box;
+    text-align: center;
     
 }
  .card:hover{
    
     transform: scale(1.05);
-    border: solid 2px #154360;
-    box-shadow: 0px 5px #154360;
-  
-    background-image: linear-gradient(to top, #154360 0%, #CA6F1E  100%);
-    
+    box-shadow: 0px 5px #FE7CB3;
+    color: #DFC2FF;
  }
 
 

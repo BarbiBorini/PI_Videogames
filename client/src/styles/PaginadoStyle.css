@@ -10,14 +10,12 @@
 
   .pag3 {
     justify-content: center;
-   
-    background-color: #2ECC71 ;
+    background-color: #FFE0F0;
     text-decoration: none;
     border-radius: 80px;
-    /* color: #7265e7; */
-    color:black;
-    box-shadow:0px 5px #154360;
-    
+    color: #FE7CB3;
+    box-shadow:0px 5px #FE7CB3;
+    border-color: #FE7CB3;
     margin-left: 0.5em;
     margin-right: 2em;
     margin-top:2em;
@@ -30,8 +28,8 @@
   .pag3:hover{
    
     transform: scale(1.05);
-    border: solid 2px  lightseagreen;
-    box-shadow: 0px 5px  black;
+    border: solid 2px  #DFC2FF ;
+    box-shadow: 0px 5px  #DFC2FF ;
     cursor: pointer;
   
     

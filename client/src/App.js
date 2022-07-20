@@ -16,10 +16,7 @@ function App() {
       <Route exact path= '/home'><Home /></Route>
       <Route  path='/videogames/:id' ><Details /> </Route> 
       <Route  path= '/videogames' ><CreateGame /></Route>
-      <Route path="*" component={NotFound} />
-      
-                        
-           
+      <Route path="*" component={NotFound} />  
       </Switch>
     </div>
     </BrowserRouter>

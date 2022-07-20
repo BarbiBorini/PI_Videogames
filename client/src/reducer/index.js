@@ -22,7 +22,7 @@ export default function rootReducer(state = initialState, action) {
     case "GET_VIDEOGAMES_QUERY":
       return {
         ...state,
-        videogames: action.payload,
+        videogames: action.payload
       };
 
     case "GET_GENRES":
