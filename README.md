@@ -77,7 +77,7 @@ __IMPORTANTE__: Para poder utilizar esta API externa es necesario crearse una cu
 
 __IMPORTANTE__: Para las funcionalidades de filtrado y ordenamiento NO pueden utilizar los endpoints de la API externa que ya devuelven los resultados filtrados u ordenados sino que deben realizarlo ustedes mismos. En particular alguno de los ordenamientos o filtrados debe si o si realizarse desde el frontend.
 
-### Únicos Endpoints/Flags que pueden utilizar
+### Endpoints/Flags utilizados
 
 - GET <https://api.rawg.io/api/games>
 - GET <https://api.rawg.io/api/games?search={game}>
@@ -90,7 +90,7 @@ A continuación se detallaran los requerimientos mínimos para la aprobación de
 
 __IMPORTANTE__: No se permitirá utilizar librerías externas para aplicar estilos a la aplicación. Tendrán que utilizar CSS con algunas de las opciones que vimos en dicha clase (CSS puro, CSS Modules o Styled Components)
 
-#### Tecnologías necesarias
+#### Tecnologías utilizadas
 
 - [ ] React
 - [ ] Redux

@@ -36,7 +36,7 @@ export default function Form() {
     const errors = {};
 
     if (!newGame.name) {
-      errors.name = "Pleas add a name";
+      errors.name = "Please add a name";
     }
 
     if (!newGame.release_date) {
@@ -56,21 +56,21 @@ export default function Form() {
     }
 
     if (!newGame.description) {
-      errors.description = "Pleas add a description";
+      errors.description = "Please add a description";
     }
 
     if (!newGame.image) {
-      errors.image = "Please add the image URL";
+      errors.image = "Please add an image URL";
     } else if (!/^https?:\/\/[\w-]+(\.[\w-]+)+[/#?]?.*$/.test(newGame.image)) {
       errors.image = " You must enter a valid url";
     }
 
     if (!newGame.genre || newGame.genre.length === 0) {
-      errors.genre = "Please add at least one gender";
+      errors.genre = "Please select at least one gender";
     }
 
     if(newGame.plataform==""){
-      errors.plataform = "Please add at least one platform"
+      errors.plataform = "Please select at least one platform"
     }
 
     return errors;
